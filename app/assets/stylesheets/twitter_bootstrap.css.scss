@@ -1,0 +1,60 @@
+
+
+// Then bootstrap itself
+@import "bootstrap";
+
+/*-----------------------------------
+        Layout
+------------------------------------ */
+body { padding-top: 70px; }
+ul.nav {
+    padding-top: 12px;
+}
+footer {
+    padding-bottom: 70px;
+}
+
+.oor-code-ray, .oor-code-ray pre {
+  font-family: 'Menlo','Courier New','Terminal',monospace;
+  background-color: #232323;
+  color: #E6E0DB;
+  text-align: left;
+  word-break: normal;
+  word-wrap: normal;
+  overflow: auto;
+}
+
+/* Code section body, overwritten highlight.css to mimic RailsCast highlight style */
+.oor-code-ray .nc, .oor-code-ray .no, .oor-code-ray .o {
+  color: #fff;
+}
+
+.oor-code-ray .k {
+  color: #cb7832;
+}
+
+.oor-code-ray .ss, .oor-code-ray .kp{
+  color: #6c9cbd;
+}
+
+.oor-code-ray .vi {
+  color: #d0cffe;
+}
+
+.oor-code-ray .nf {
+  color: #ffc56d;
+}
+
+.oor-code-ray .c1 {
+  color: #BC9358;
+  font-style: italic;
+}
+
+.oor-code-ray .s2 {
+  color: #a4c260;
+}
+
+.oor-code-ray .nb, .oor-code-ray .n {
+  color: #819F7F;
+}
+

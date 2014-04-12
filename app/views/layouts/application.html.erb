@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maoz Web Site</title>
+    <%= javascript_include_tag('public') %>
+  </head>
+  <body>
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
+    <!-- before yield -->
+    <%= yield %>
+    <!-- after yield -->
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<% @page_title = @page.name %>
+
+<h2><%= @page.name %></h2>
+
+<% @page.sections.visible.sorted.each do |section| %>
+  <section id="body" class="col-md-8">
+    <% case section.content_type %>
+    <% when 'HTML' %>
+      <%= raw(sanitize(section.content, :tags => ['strong', 'em', 'a'])) %>
+    <% when 'text' %>
+      <p><%= section.content %></p>
+    <% when 'code' %>
+     <div class="oor-code-ray">
+      <div class="code">
+       <pre>
+        <% cache Digest::SHA1.hexdigest(section.content) do %>
+          <%= highlight_code(:rb, section.content).html_safe %>
+        <% end %>
+       </pre>
+      </div>
+     </div>
+    <% end %>
+  </section>
+<% end %>

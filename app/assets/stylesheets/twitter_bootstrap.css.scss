@@ -58,3 +58,149 @@ footer {
   color: #819F7F;
 }
 
+
+
+/*Wizard*/
+#sandboxWizard fieldset {
+  margin: 1px 1px 1px 1px !important;
+}
+
+input [name='addUser'] {
+  margin-left: 40px !important;
+}
+
+.sandboxTitle p {
+  float: left;
+  font-family: 'MyWebFont', Arial, sans-serif;
+  font-size: 24px;
+  padding-top: 24px;
+  width: 256px;
+  float: left;
+}
+
+
+
+#wizardMenu {
+  background: none repeat scroll 0 0 #34373D;
+  border-right: 1px solid #222224;
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.15) inset;
+  height: 100%;
+  //position: absolute;
+  text-align: center;
+  //top: 65px;
+  width: 165px;
+  z-index: 1;
+  //float: left;
+}
+
+#wizardMenu a.chart_data {
+  background-image: url("../images/icon_datatable.png");
+}
+
+#wizardMenu a {
+  background: none no-repeat scroll center 10px rgb(53, 55, 61);
+  border: 1px solid rgb(42, 44, 49);
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 rgb(60, 63, 70), 1px 1px 1px rgb(60, 63, 70) inset;
+  color: rgb(131, 138, 153);
+  display: block;
+  font-size: 12px;
+  height: 20px;
+  margin: 15px auto;
+  padding: 56px 0 0;
+  width: 60px;
+}
+
+#wizardMenu .campaign_nav a {
+  background: none no-repeat scroll center 10px #35373D;
+  border: 1px solid #2A2C31;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 #3C3F46, 1px 1px 1px #3C3F46 inset;
+  color: #838A99;
+  display: block;
+  float: left;
+  font-size: 12px;
+  height: 20px;
+  margin: 13px 8px;
+  width: 64px;
+}
+
+#wizardMenu h4 {
+  background: none repeat scroll 0 0 rgb(34, 34, 36);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.15) inset, 0 1px 0 rgb(32, 32, 32);
+  color: rgb(127, 127, 127);
+  font-size: 12px;
+  margin: 1px 0 0;
+  padding: 10px;
+}
+
+#wizardMenu li a {
+  margin-bottom: 27px;
+  position: relative;
+}
+
+#wizardMenu  [class^="icon-"] {
+  color: white;
+  font-size: 27px;
+  left: 67px;
+  position: absolute;
+  top: 9px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+#wizardMenu ul.campaign_nav [class^="icon-"] {
+  color: white;
+  font-size: 27px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  z-index: 9;
+}
+
+.side-nav-option span {
+  position: relative;
+  top: -17px;
+}
+
+#wizardMenu a:hover {
+  background-color: #3c3e45;
+  box-shadow: 1px 1px 0 #44484e, inset 1px 1px 1px #44484e;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+#wizardMenu a.active {
+  background-color: #25272a;
+  box-shadow: 1px 1px 0 #44484e, inset 1px 1px 3px #222;
+  color: #fff
+}
+
+#wizardMenu .date_rang {
+  color: #838A99;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#wizardMenu .date_rang input {
+  width: 105px;
+}
+
+#wizardMenu ul li,#wizardMenu  li {
+  list-style: none;
+}
+
+
+.container{
+  margin: 0;
+  padding: 0;
+  width:100%
+}
+
+#main {
+  background-color: #FFFFFF;
+}
+
+

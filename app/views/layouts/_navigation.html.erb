@@ -1,13 +1,18 @@
 <% subjects ||= [] %>
-<ul>
 <% subjects.each do |subject| %>
-  <li>
-    <%= subject.name %>
-    <ul>
-    <% subject.pages.visible.sorted.each do |page| %>
-      <li><%= link_to_unless_current(page.name, {:action => 'show', :permalink => page.permalink}) %></li>
+    <h4><%= subject.name %></h4>
+    <ul class="nav campaign_nav">
+      <% subject.pages.visible.sorted.each do |page| %>
+<li data-screen="<%=page.name%>"  class="side-nav-option">
+  <%= link_to_unless_current(page.name, {:action => 'show', :permalink => page.permalink}) %>
+  <a data-scope="<%=page.name%>">
+    <i class="icon-globe"></i>
+    <span><%= page.name %></span>
+
+  </a>
+  </li>
+
     <% end %>
     </ul>
-  </li>
   <% end %>
-</ul>
+

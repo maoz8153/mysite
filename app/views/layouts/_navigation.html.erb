@@ -4,11 +4,10 @@
     <ul class="nav campaign_nav">
       <% subject.pages.visible.sorted.each do |page| %>
 <li data-screen="<%=page.name%>"  class="side-nav-option">
-  <%= link_to_unless_current(page.name, {:action => 'show', :permalink => page.permalink}) %>
-  <a data-scope="<%=page.name%>">
+  <a data-scope=<%=page.name%>>
     <i class="icon-globe"></i>
     <span><%= page.name %></span>
-
+<%= link_to_unless_current(page.name, {:action => 'show', :permalink => page.permalink}) %>
   </a>
   </li>
 

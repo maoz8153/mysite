@@ -3,7 +3,8 @@
 <h2><%= @page.name %></h2>
 
 <% @page.sections.visible.sorted.each do |section| %>
-  <section id="body" class="">
+  <section id="body" class="page">
+
     <% case section.content_type %>
     <% when 'HTML' %>
       <%= raw(sanitize(section.content, :tags => ['strong', 'em', 'a'])) %>
